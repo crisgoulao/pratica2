@@ -1,0 +1,9 @@
+/* Personalização da cor de fundo dos botões do Bootstrap */
+.btn-custom {
+    background-color: #ff9900; /* Cor personalizada */
+    color: #ffffff; /* Cor do texto personalizada */
+  }
+  
+  /* Personalização de outros estilos */
+  /* ... */
+  

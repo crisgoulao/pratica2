@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Lista de Tareas</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">
+      <input type="checkbox" [(ngModel)]="task.completado">
+      <span [style.text-decoration]="task.completado ? 'line-through' : 'none'" [style.color]="task.completado ? '#999' : 'inherit'">{{ task.nombre }}</span>
+      <button class="btn btn-danger btn-sm float-right" (click)="removeTask(task.id)">Eliminar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+    <h2>Lista de Tareas</h2>
+    
+    <form (submit)="addTask()">
+      <div class="form-group">
+        <label for="newTask">Nueva Tarea</label>
+        <input type="text" class="form-control" id="newTask" [(ngModel)]="newTask" name="newTask" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar Tarea</button>
+    </form>
+</div>
+  
