@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class TaskService {
   private tasks = [
     { id: 1, nombre: 'Limpiar la casa', completado: false },
-    { id: 2, nombre: 'Cepillarse los dientes', completado: true },
-    { id: 3, nombre: 'Comprar pan', completado: true },
+    { id: 2, nombre: 'Cepillarse los dientes', completado: false },
+    { id: 3, nombre: 'Comprar pan', completado: false },
     { id: 4, nombre: 'Reservar peluquería', completado: false }
   ];
 
